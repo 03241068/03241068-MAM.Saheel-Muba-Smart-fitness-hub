@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fitness Hub</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<header>
+    <img src="Logo.jfif" class="logo">
+    <h1>Smart Fitness Hub</h1>
+    <button id="darkModeBtn">Dark Mode</button>
+</header>
+
+<section class="hero">
+    <img src="Banner.jfif" alt="Fitness Banner">
+    <h2>Train Smart. Live Healthy.</h2>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h3>Workout Videos</h3>
+        <video controls>
+            <source src="Vdo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="card">
+        <h3>Motivation Audio</h3>
+        <audio controls>
+            <source src="Ado.mp3" type="audio/mp3">
+        </audio>
+    </div>
+</section>
+
+<section class="bmi">
+    <h2>BMI Calculator</h2>
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <input type="number" id="height" placeholder="Height (cm)">
+    <button onclick="calculateBMI()">Calculate</button>
+    <p id="result"></p>
+</section>
+
+<footer>
+    <p>© 2025 Smart Fitness Hub | Developed for WMA Final Project</p>
+</footer>
+
+<script src="App.js"></script>
+</body>
+</html>
