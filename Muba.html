@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fitness Hub</title>
+     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="Muba.css">
+</head>
+<body>
+
+
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="#home" class="nav-btn">Dashboard</a>
+        <a href="#hero" class="nav-btn">Home</a>
+        <a href="#features" class="nav-btn">Features</a>
+        <a href="#bmi" class="nav-btn">BMI Calculator</a>
+        <button id="darkModeBtn" class="nav-btn dark-btn">Dark Mode</button>
+    </div>
+
+   
+    <img src="Logo.jfif" class="nav-logo" alt="Logo">
+</nav>
+
+
+<section id="home" class="dashboard">
+    <h1>Global Fitness Dashboard</h1>
+    <p>How Gym & Fitness Improve World Health</p>
+
+    <div class="dashboard-bars">
+
+       <div class="stat-card">
+            <h3>Reduced Lifestyle Diseases</h3>
+            <div class="bar">
+                <div class="bar-fill bar3">40%</div>
+            </div>
+            <p>Lower risk of diabetes & heart disease via exercise</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Physically Active People</h3>
+            <div class="bar">
+                <div class="bar-fill bar2">35%</div>
+            </div>
+            <p>People meeting WHO physical activity guidelines</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Mental Health Improvement</h3>
+            <div class="bar">
+                <div class="bar-fill bar4">50%</div>
+            </div>
+            <p>People reporting stress reduction from gym workouts</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="hero" class="hero">
+
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="Vdo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+   
+    <div class="hero-content">
+        <h1>Welcome to Smart Fitness Hub</h1>
+        <h2>Train Smart. Live Healthy.</h2>
+    </div>
+</section>
+
+
+
+<section id="features" class="features">
+    <div class="card">
+        <h3>Workout Videos</h3>
+
+        <video controls><source src="01.mp4" type="video/mp4"></video>
+          </div>
+
+    <div class="card">
+        <h3>Motivation Audio</h3>
+
+        <audio controls><source src="001.M4A" type="audio/mp3"></audio>
+        <audio controls><source src="002.M4A" type="audio/mp3"></audio>
+        <audio controls><source src="003.M4A" type="audio/mp3"></audio>
+        <audio controls><source src="004.M4A" type="audio/mp3"></audio>
+        <audio controls><source src="005.M4A" type="audio/mp3"></audio>
+
+        <h3>Motivation Songs</h3>
+
+        <audio controls><source src="01.mp3" type="audio/mp3"></audio>
+        <audio controls><source src="02.mp3" type="audio/mp3"></audio>
+        <audio controls><source src="03.mp3" type="audio/mp3"></audio>
+      
+    </div>
+    
+    <div class="card">
+      <img src="03.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Workout Structure</h5>
+        <p class="card-text">Monday: Likely upper body focus with bench press variations (4 sets 10-15 reps), rows (4 sets 10-15 reps), pull-downs or lat pulldowns (4 sets 10-15 reps), and accessory presses or flies (4 sets 10-15 reps).
+Wednesday: Mixed or lower emphasis, including squats (4 sets 10-15 reps), bench or chest press (4 sets 10-15 reps), rows or pulls (4 sets 10-15 reps), and deadlift variations (sets 10-15 reps).
+
+
+Thursday: Upper body again, with overhead presses (4 sets 10-15 reps), rows (4 sets 10-15 reps), bench (4 sets 10-15 reps), and pulls (4 sets 10-15 reps).
+
+Friday: Lower or full body, featuring squats or deadlifts (sets 10-15 reps), bench (3-4 sets 10-15 reps), and lighter accessories (3 sets 10 reps).
+​ <h5 class="card-title">Benefits</h5>Such routines build muscle effectively by hitting major lifts 2x weekly for optimal frequency, suiting intermediate trainees like students balancing IT studies.
+Rest days (Tuesday, Saturday, Sunday) aid recovery, aligning with current date (Saturday rest).Progression Tips
+<h5 class="card-title">Progression Tips</h5>Increase weight when completing all reps with good form; deload 10% if missing >10% reps over sessions.
+​
+
+Warm up progressively, rest 2-3 minutes between sets.</p>
+      </div>
+    </div>
+  </div>
+  
+    </div>
+</section>
+
+<section id="bmi" class="bmi">
+
+    <video autoplay muted loop playsinline class="bmi-video">
+        <source src="BMI.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+   
+    <div class="bmi-content">
+        <h2>BMI Calculator</h2>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <button onclick="calculateBMI()">Calculate</button>
+        <p id="result"></p>
+    </div>
+</section>
+
+
+
+<footer id="contact">
+    <p> 2026 Smart Fitness Hub | Developed for WMA Final Project</p>
+</footer>
+
+<script src="Muba.js"></script>
+</body>
+</html>
